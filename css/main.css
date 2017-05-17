@@ -3,13 +3,22 @@
     font-family: 'Raleway', sans-serif;   
 }
 .navbar-default {
-background-color: #a4deb3;
+background: rgba(59,245,155,1);
+background: -moz-linear-gradient(left, rgba(59,245,155,1) 0%, rgba(24,189,240,1) 51%, rgba(39,179,230,1) 100%);
+background: -webkit-gradient(left top, right top, color-stop(0%, rgba(59,245,155,1)), color-stop(51%, rgba(24,189,240,1)), color-stop(100%, rgba(39,179,230,1)));
+background: -webkit-linear-gradient(left, rgba(59,245,155,1) 0%, rgba(24,189,240,1) 51%, rgba(39,179,230,1) 100%);
+background: -o-linear-gradient(left, rgba(59,245,155,1) 0%, rgba(24,189,240,1) 51%, rgba(39,179,230,1) 100%);
+background: -ms-linear-gradient(left, rgba(59,245,155,1) 0%, rgba(24,189,240,1) 51%, rgba(39,179,230,1) 100%);
+background: linear-gradient(to right, rgba(59,245,155,1) 0%, rgba(24,189,240,1) 51%, rgba(39,179,230,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3bf59b', endColorstr='#27b3e6', GradientType=1 );
     border-color: transparent;
 }
 .navbar {
     min-height:70px;
     margin-bottom: 0px;
     border-radius:0px;
+        text-shadow: 0px 0px 3px rgb(21, 21, 21);
+    box-shadow: 0px 3px 10px -3px black;
 }
 .navbar-brand {
     padding:0px;
@@ -20,10 +29,13 @@ background-color: #a4deb3;
 .nav > li {
     position: relative;
     display: inline-block;
+    width:135px;
 }
 .nav > li:hover,.nav > li:focus{
-    background-color: rgba(247, 247, 247, 0.66);
+      background-color: rgba(169, 68, 66, 0.07);
     height: 100%;
+    box-shadow: 0 0 4px -2px black;
+    text-shadow:none;
 }
 .nav > li > a{
     font-size:16px;
@@ -35,12 +47,15 @@ background-color: #a4deb3;
 .navbar-nav > li {
     float: none;
 }
-
+.navbar-default .navbar-nav > li > a{
+    color:#fff;
+}
 
 
 .fill-screen {
-    background-size: cover;
-    background-position: center;
+    /*background-size: cover;
+    background-position: center;*/
+        background-color: rgb(19, 170, 191);
 }
 .no-padding{
     padding:0px;
@@ -84,7 +99,7 @@ background-color: #a4deb3;
     color: white;
 }
 .main-content{
-    margin-top:100px;
+    padding-top:70px;
 }
 .Personal-info{
     list-style: none;
@@ -92,8 +107,18 @@ background-color: #a4deb3;
         height: 410px;
 }
 .Personal-info >li{
-    padding:11px;
+    padding:10px;
     border-bottom:1px dashed;
+    margin-top:3px;
+}
+.Personal-info >li:hover{
+    transition:0.3s;
+    text-shadow: -6px 6px 13px rgba(0, 0, 0, 0.46);
+    background-color: rgba(121, 121, 121, 0.2);
+    font-size: 16px;
+    border: 0px none;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px -1px #000000;
 }
 .Personal-info > li > label{
         font-size: 16px;
@@ -117,5 +142,27 @@ background-color: #a4deb3;
         
 }
 .sociality a:hover,.sociality a:focus{
-    color:#67e67e;
+    color:#4ea5f1;
+        text-shadow: 0 0 5px black;
+}
+.box-red{
+    background-color:#e94949;
+        right: 5px;
+}
+.box-blue{
+    background-color:#4890e9;
+        right: 25px;
+}
+.box-aqua{
+    background-color:#39c4d8;
+        right: 45px;
+}
+.box{
+     position:fixed;
+     width:15px;
+    height:30px;
+    top:0px;
+
+        box-shadow: 0 0 1px 0px black;
+    z-index: 9999;
 }
